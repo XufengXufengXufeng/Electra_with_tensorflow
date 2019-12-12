@@ -1,0 +1,21 @@
+
+datafiles: 
+ - "data/baike_qa_valid.json"
+ - "data/baike_qa_train.json"
+char2id_loc: "data/processed_data/char2id.json"
+id2char_loc: "data/processed_data/id2char.json"
+train_data_loc: "data/processed_data/train.txt"
+embedding_size: 100
+generator_size: 50
+gn_blocks: 1
+seq_length: 512
+gn_heads: 4
+gff_filter_size: 150
+g_dev: "/CPU:0"
+dn_blocks: 3
+dn_heads: 6
+dff_filter_size: 300
+d_dev: "/CPU:0"
+d_factor: 50
+learning_rate: 1e-3
+max_len: 512

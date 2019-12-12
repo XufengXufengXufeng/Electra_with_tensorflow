@@ -1,0 +1,1 @@
+from .attribute_node_model import nlu_model_producer,parser_producer
