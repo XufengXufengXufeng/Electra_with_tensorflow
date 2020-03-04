@@ -2,11 +2,17 @@
 This is an implementation of electra according to the paper {ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators}
 
 # Things to know before you read the project:
+
 1. This is a very raw project. Too rough to use for production. It's not well organized and tested, so not good for research either. It may just provide some ideas when you want to implement electra.
+
 2. There are some differences between my implement and the original electra paper:
+
 2.1 I don't have any powerful computing resources, so i haven't used matrix multiplication for masking. Simplly put, for each batch i use a randomed sample size. Each batch has same number of token being masked.
+
 2.2 In the paper, the authors state the generator hidden size is half of the discriminator hidden size. I haven't figure out how to half the hidden size of a transformer encoder. To my understanding, halfing the hidden size is the same as halfing the number of heads. So I just half the head counts (in my hyper-parameters, it is not halved exactly, it just 4/6. I have no reason for the action. in fact i haven't done any effort on tuning the model at all.)
+
 3. As you may probably tell, this project is not polished. There maybe some errors that I haven't found. I haven't used the datasets that were used in the paper. I used a chinese dataset, so there is no reference regarding how well the model should work on the dataset. All in all, it's not well experimented project, I suggest my fellow viewers don't dive too much in this project, if you want to make a production ready application.
+
 4. My writing with tensorflow is not standard, as you may tell. I use many functional programming. I do this because I didn't read tensorflow user guide enough, also because I feel comfortable writing functions. I think data types more complex than the prime type are immutable and the tensorflow layers feel more complex than dictionary, so I just write functions with no test at all. That's probably why errors may happen running my project.
 
 # how to run this project
