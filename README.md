@@ -58,7 +58,7 @@ dff_filter_size: 300 # this is the discriminator feed forward filter size.
 
 d_dev: "/CPU:0" # this is the same GPU loss story.
 
-d_factor: 50 # this is the factor that is used to emp the discriminator loss.
+d_factor: 50 # this is the factor that is used to amp the discriminator loss.
 
 learning_rate: 1e-3 # this is the learning rate.
 
