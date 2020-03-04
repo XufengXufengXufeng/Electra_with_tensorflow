@@ -13,7 +13,7 @@ This is an implementation of electra according to the paper {ELECTRA: Pre-traini
 
 3. As you may probably tell, this project is not polished. There maybe some errors that I haven't found. I haven't used the datasets that were used in the paper. I used a chinese dataset, so there is no reference regarding how well the model should work on the dataset. All in all, it's not well experimented project, I suggest my fellow viewers don't dive too much in this project, if you want to make a production ready application.
 
-4. My writing with tensorflow is not standard, as you may tell. I use many functional programming. I do this because I didn't read tensorflow user guide enough, also because I feel comfortable writing functions. I think data types more complex than the prime type are immutable and the tensorflow layers feel more complex than dictionary, so I just write functions with no test at all. That's probably why errors may happen running my project.
+4. My writing with tensorflow is not standard, as you may tell. I use many functional programming. I do this because I didn't read tensorflow user guide enough, also because I feel comfortable writing functions. I think data types more complex than the prime types are mutable and the tensorflow layers feel more complex than dictionary, so I just write functions with no test at all. That's probably why errors may happen running my project.
 
 # how to run this project
 ## the environment 
